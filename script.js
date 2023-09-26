@@ -23,8 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
                   {qt:"You are never too old to set another goal or to dream a new dream",pers:"C.S. Lewis"}];
     const skillPara = "I have developed strong technical skills, particularly in programming with languages like C++ and Java. I am also proficient in web development, using HTML, CSS, and JavaScript for creating engaging front-end interfaces. Additionally, I have a solid understanding of database management systems, operating systems, and object-oriented programming.Beyond my technical abilities, I have a genuine passion for playing cricket and chess. Cricket allows me to showcase my teamwork and sportsmanship, while chess hones my strategic thinking and problem-solving skills. These interests add a well-rounded dimension to my profile, combining both technical expertise and a love for strategic games.";
     const projectPara = ""
-    const contact = ""
-    const resume = ""
     
     const contents = [{ head: navBtn0, desc: skillPara }, { head: navBtn1, desc: projectPara }];
     let currentPos = 0;
@@ -59,16 +57,17 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             else if (buttonText === "Contact") {
                 window.open("https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWsCRjxKdFQtLhcrRNglDwVdlSbLSNPGwpSbBwTXblBxnRCqprksRRpBmXCnjlCsMLMhqrFBB","_blank");
-                navBtn[currentPos].style.backgroundColor="transparent";
-                navBtn[currentPos].style.color="black";
-                navBtn[currentPos].style.backgroundColor="#EBE4D1"
+                button.style.color="#ffffff";
+                button.style.backgroundColor="transparent";
+                button.style.color="black";
+                button.style.backgroundColor="#EBE4D1"
             }
             else if (button.textContent = "Resume") {
                 window.open("https://drive.google.com/file/d/1X-QdpK0y-uEJsvAxhiThi0eXK7Nt8Kcf/view?usp=sharing","_blank");
-                navBtn[currentPos].style.color="#ffffff";
-                navBtn[currentPos].style.backgroundColor="transparent";
-                navBtn[currentPos].style.color="black";
-                navBtn[currentPos].style.backgroundColor="#EBE4D1";
+                button.style.color="#ffffff";
+                button.style.backgroundColor="transparent";
+                button.style.color="black";
+                button.style.backgroundColor="#EBE4D1";
             }
         })
     });
@@ -130,13 +129,13 @@ document.addEventListener("DOMContentLoaded", () => {
         window.open("https://github.com/aryansingh2020", '_blank');
     })
     linkedInBtn.addEventListener("click",()=>{
-        window.open("https://www.linkedin.com/feed/", '_blank');
+        window.open("www.linkedin.com/in/aryansingh2020", '_blank');
     })
     hackerRankBtn.addEventListener("click",()=>{
         window.open("https://www.hackerrank.com/profile/aryansingh2020", '_blank');
     })
     instaBtn.addEventListener("click",()=>{
-        // window.location.href = "https://www.instagram.com/aar_y_ann/";
+        
         window.open("https://www.instagram.com/aar_y_ann/", '_blank');
 
     })
