@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
             else if (buttonText === "Contact") {
                 window.open("https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWsCRjxKdFQtLhcrRNglDwVdlSbLSNPGwpSbBwTXblBxnRCqprksRRpBmXCnjlCsMLMhqrFBB","_blank");
                 navBtn[currentPos].style.backgroundColor="transparent";
-                currentPos = 2;
                 navBtn[currentPos].style.color="black";
                 navBtn[currentPos].style.backgroundColor="#EBE4D1"
             }
@@ -68,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 window.open("https://drive.google.com/file/d/1X-QdpK0y-uEJsvAxhiThi0eXK7Nt8Kcf/view?usp=sharing","_blank");
                 navBtn[currentPos].style.color="#ffffff";
                 navBtn[currentPos].style.backgroundColor="transparent";
-                currentPos = 3;
                 navBtn[currentPos].style.color="black";
                 navBtn[currentPos].style.backgroundColor="#EBE4D1";
             }
