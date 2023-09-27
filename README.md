@@ -3,7 +3,7 @@
 ![Screenshot 2023-09-25 235230](https://github.com/aryansingh2020/Portfolio/assets/90084789/a8a674dd-8af2-4276-b7dd-4b43321a5a4a)
 
 ### Description
-This is my personal portfolio website, showcasing my web development projects, skills, and contact information. The website is built using HTML, CSS, and JavaScript.
+This is my personal portfolio website, showcasing my web development projects and skills. The website is built using HTML, CSS, and JavaScript.
 https://aryansingh2020.github.io/Portfolio/
 
 ### Table of Contents
