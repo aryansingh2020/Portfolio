@@ -73,21 +73,21 @@ body{
     display:flex;
     flex-wrap:wrap;
     margin-top:95px;
-    height: 500px;
+    min-height: 500px;
     justify-content: space-around;
-    align-items: center;
-}
-#box1{
-    display:flex;
-    justify-content: center;
     align-items: center;
 }
 #box0{
     display: flex;
     flex-direction: column;
-    height:490px;
-    width:500px;
+    max-height:490px;
+    max-width:500px;
     background-color:black;
+    align-items: center;
+}
+#box1{
+    display:flex;
+    justify-content: center;
     align-items: center;
 }
 #image1{
@@ -170,8 +170,9 @@ body{
 }
 #box2{
     position:relative;
-    height:440px;
-    width:640px;
+    min-height:440px;
+    min-width:320px;
+    max-width: 640px;
     background: linear-gradient(to right, #E55604, #FFAB33);
     border-radius:3px;
     padding:30px;
@@ -197,7 +198,7 @@ body{
     flex-wrap: wrap;
     font-size: 20px;
     color:#EBE4D1;
-    height:50px;
+    min-height:50px;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
