@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   {qt:"The only limit to our realization of tomorrow will be our doubts of today.",pers:" Franklin D. Roosevelt"},
                   {qt:"You are never too old to set another goal or to dream a new dream",pers:"C.S. Lewis"}];
     const skillPara = "I have developed strong technical skills, particularly in programming with languages like C++ and Java. I am also proficient in web development, using HTML, CSS, and JavaScript for creating engaging front-end interfaces. Additionally, I have a solid understanding of database management systems, operating systems, and object-oriented programming.Beyond my technical abilities, I have a genuine passion for playing cricket and chess. Cricket allows me to showcase my teamwork and sportsmanship, while chess hones my strategic thinking and problem-solving skills. These interests add a well-rounded dimension to my profile, combining both technical expertise and a love for strategic games.";
-    const projectPara = ""
+    const projectPara = "1. The Real Estate Web App is a web application built using React, a popular JavaScript library for building user interfaces. This project is designed to help users search for real estate properties, view property details, and make inquiries.\n  2. The Color Picker Web App is a user-friendly web application developed using React. It helps users select and explore colors, making it useful for designers, artists, and anyone working with color.\n 3. The Calculator project is a simple web-based calculator built using HTML, CSS, and JavaScript. It provides basic mathematical functions such as addition, subtraction, multiplication, and division. Please visit my Github profile for more details.";
     
     const contents = [{ head: navBtn0, desc: skillPara }, { head: navBtn1, desc: projectPara }];
     let currentPos = 0;
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 navBtn[currentPos].style.backgroundColor="transparent";
                 currentPos = 1;
                 navBtn[currentPos].style.color="black";
-                navBtn[currentPos].style.backgroundColor="#EBE4D1"
+                navBtn[currentPos].style.backgroundColor="#EBE4D1";
             }
             else if (buttonText === "Contact") {
                 window.open("https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWsCRjxKdFQtLhcrRNglDwVdlSbLSNPGwpSbBwTXblBxnRCqprksRRpBmXCnjlCsMLMhqrFBB","_blank");

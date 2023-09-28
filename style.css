@@ -182,7 +182,7 @@ body{
     text-align: center;   
 }
 #para2{
-    text-align: center;
+    text-align:justify;
     font-family: 'Roboto', sans-serif;
     font-size:20px;
     line-height: 1.5;
