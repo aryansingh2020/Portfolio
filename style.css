@@ -170,14 +170,12 @@ body{
 }
 #box2{
     position:relative;
-    height:440px;
+    min-height:440px;
     min-width:320px;
     max-width: 640px;
     background: linear-gradient(to right, #E55604, #FFAB33);
     border-radius:3px;
-    overflow:auto;
     padding:30px;
-    scrollbar-width: 100px;
 }
 #header2{
     position: relative;
