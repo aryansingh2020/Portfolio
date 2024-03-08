@@ -112,12 +112,12 @@ body{
     width:400px;
 }
 #head1{
-    color:#EBE4D1;
+    color:#E55604;
     font-family: 'Roboto', sans-serif;
     transition:0.3s ease;
 }
 #head1:hover{
-    color:#E55604;
+    color:#EBE4D1;
     transition: 0.3s ease;
 }
 #para1{
@@ -170,12 +170,14 @@ body{
 }
 #box2{
     position:relative;
-    min-height:440px;
+    height:440px;
     min-width:320px;
     max-width: 640px;
     background: linear-gradient(to right, #E55604, #FFAB33);
     border-radius:3px;
+    overflow:auto;
     padding:30px;
+    scrollbar-width: 100px;
 }
 #header2{
     position: relative;
