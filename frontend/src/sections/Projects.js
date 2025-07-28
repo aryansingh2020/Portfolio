@@ -27,7 +27,7 @@ const Projects = () => {
   }, [])
 
   return (
-    <div className="projects flex items-center">
+    <div className="projects flex flex-col items-center gap-[3dvh] sm:flex-row sm:gap-0">
       <PageTitle text="PROJECTS" />
       {
         loading ? (
@@ -46,7 +46,7 @@ const Projects = () => {
             href="https://github.com/aryansingh2020?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-[2dvh] bg-yellow-400 font-semibold rounded-md text-[2.5dvh] mr-auto hover:bg-yellow-500"
+            className="p-[1.5dvh] bg-yellow-400 font-semibold rounded-md text-[2.5dvh] sm:mr-auto hover:bg-yellow-500"
           >
             View More
           </a>

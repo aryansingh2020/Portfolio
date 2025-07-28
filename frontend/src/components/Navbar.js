@@ -3,11 +3,11 @@ const Navbar=({setActiveSection})=>{
     
     return(
         <div>
-            <nav className="navbar flex justify-center items-center gap-5 w-[100%] h-[15dvh]">
+            <nav className="navbar flex justify-center items-center gap-[3dvh] h-[14dvh] sm:h-[15dvh]">
                 <Button onClick={()=>setActiveSection("home")} text={"Home"}/>
                 <Button onClick={()=>setActiveSection("skills")} text={"Skills"}/>
                 <Button onClick={()=>setActiveSection("projects")} text={"Projects"}/>
-                <Button className="button bg-orange-600" onClick={()=>setActiveSection("contact")} text={"Contact"}/>
+                <Button onClick={()=>setActiveSection("contact")} text={"Contact"}/>
             </nav>
         </div>
     )

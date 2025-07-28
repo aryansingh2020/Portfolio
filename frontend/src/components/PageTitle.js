@@ -2,7 +2,8 @@
 
 const PageTitle = ({ text }) => {
     return (
-         <div className="page-title text-white flex flex-col justify-center items-cente min-w-[10dvh] h-[75dvh] rounded-tr-3xl rounded-br-3xl mr-[3dvh] bg-white/30 backdrop-blur-sm border border-white/20">
+         <div 
+         className="page-title text-white flex justify-center items-center w-[40dvh] sm:bg-white/30 sm:backdrop-blur-sm sm:border sm:border-white/20 sm:flex-col sm:w-[10dvh] sm:h-[75dvh] sm:rounded-tr-3xl sm:rounded-br-3xl">
             {text.split("").map((letter,index) => {
                 return (
                     <div key={index}>

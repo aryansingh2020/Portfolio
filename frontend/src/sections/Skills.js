@@ -45,9 +45,9 @@ const otherSkills = {
 
 const Skills = () => {
     return (
-        <div className="skills flex items-center">
+        <div className="skills flex flex-col gap-[3dvh] items-center sm:flex-row sm:gap-0">
             <PageTitle text={"SKILLS"}/>
-            <div className="flex justify-evenly ml-auto mr-auto gap-[2dvh]">
+            <div className="flex flex-col sm:flex-row sm:justify-evenly ml-auto mr-auto gap-[2dvh]">
                 <SkillsCard text={"LEARNING:"} skills={learningSkills} />
                 <SkillsCard text={"USING NOW:"} skills={usingNowSkills} />
                 <SkillsCard text={"OTHER:"} skills={otherSkills} />
