@@ -27,7 +27,7 @@ const Projects = () => {
   }, [])
 
   return (
-    <div className="projects flex flex-col items-center gap-[3dvh] sm:flex-row sm:gap-0">
+    <div className="projects flex flex-col items-center gap-[2dvh] sm:flex-row sm:gap-0">
       <PageTitle text="PROJECTS" />
       {
         loading ? (

@@ -5,12 +5,29 @@ import portfolioPic from '../assets/portfolio.png'
 
 const Home = () => {
     return (
-        <div className="home flex flex-col justify-evenly items-center gap-[3dvh] sm:flex-row  ">
-            <div className="left-side flex justify-evenly w-[40dvh] bg-white/30 backdrop-blur-sm border border-white/20 sm:flex-col sm:items-center sm:w-[10dvh] sm:h-[75dvh] sm:rounded-tr-3xl sm:rounded-br-3xl sm:mr-[3dvh]">
-                <img src={githubIcon} alt="github" className="github-icon w-[8dvh] h-[8dvh]" />
-                <img src={linkedInIcon} alt="linkeIn" className="linkedin-icon w-[8dvh] h-[8dvh]" />
-                <img src={leetCodeIcon} alt="leetcode" className="leetcode-icon w-[8dvh] h-[8dvh]" />
+        <div className="home flex flex-col justify-evenly items-center gap-[2dvh] sm:flex-row  ">
+            <div className="left-side flex justify-evenly w-[40dvh] sm:bg-white/30 sm:backdrop-blur-sm sm:border sm:border-white/20 sm:flex-col sm:items-center sm:w-[10dvh] sm:h-[75dvh] sm:rounded-tr-3xl sm:rounded-br-3xl sm:mr-[3dvh]">
+                <a href="https://github.com/aryansingh2020"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <img src={githubIcon} alt="github" className="github-icon w-[8dvh] h-[8dvh]" />
+                </a>
 
+                <a
+                    href="https://www.linkedin.com/in/aryansingh2020"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src={linkedInIcon} alt="linkeIn" className="linkedin-icon w-[8dvh] h-[8dvh]" />
+                </a>
+
+                <a
+                    href="https://leetcode.com/u/aryansingh20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src={leetCodeIcon} alt="leetcode" className="leetcode-icon w-[8dvh] h-[8dvh]" />
+                </a>
             </div>
 
             <div className="name-designation flex flex-col w-fit h-fit  justify-center sm:ml-auto">

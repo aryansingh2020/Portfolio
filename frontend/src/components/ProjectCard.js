@@ -1,6 +1,6 @@
 const ProjectCard = ({ data }) => {
   return (
-    <div className="project-details w-[60dvh] h-[25dvh] flex flex-col justify-center bg-white/30 backdrop-blur-sm border border-white/20 rounded-md p-4">
+    <div className="project-details w-[50dvh] h-[35dvh] flex flex-col justify-center bg-white/30 backdrop-blur-sm border border-white/20 rounded-md p-4">
       <label className="text-[4dvh] font-bold text-yellow-400">{data.name}</label>
       <label className="text-[3dvh] text-white">
         {data.description || "No description available"}
