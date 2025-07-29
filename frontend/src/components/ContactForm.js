@@ -18,38 +18,31 @@ const ContactForm = () => {
     };
 
     // Handle form submission
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus({ success: null, message: "Sending..." });
 
-        // Prepare data for EmailJS
         const dataToSend = {
             ...formData,
             time: new Date().toLocaleString() // Add current date & time
         };
 
-        // EmailJS
-        emailjs
-            .send(
-                emailjs.send(
-                    process.env.REACT_APP_SERVICE_ID,
-                    process.env.REACT_APP_TEMPLATE_ID,
-                    dataToSend,
-                    process.env.REACT_APP_PUBLIC_KEY
-                )
-
-            )
-            .then(
-                () => {
-                    setStatus({ success: true, message: "Message sent successfully!" });
-                    setFormData({ name: "", email: "", phone: "", message: "" });
-                },
-                (error) => {
-                    console.error(error);
-                    setStatus({ success: false, message: "Failed to send message. Try again." });
-                }
+        try {
+            await emailjs.send(
+                process.env.REACT_APP_SERVICE_ID,
+                process.env.REACT_APP_TEMPLATE_ID,
+                dataToSend,
+                process.env.REACT_APP_PUBLIC_KEY
             );
+
+            setStatus({ success: true, message: "Message sent successfully!" });
+            setFormData({ name: "", email: "", phone: "", message: "" });
+        } catch (error) {
+            console.error(error);
+            setStatus({ success: false, message: "Failed to send message. Try again." });
+        }
     };
+
 
     return (
         <div className="form flex flex-col items-center w-fit h-fit rounded-lg ml-auto mr-auto bg-white/30 backdrop-blur-sm border border-white/20 p-[3dvh]">
